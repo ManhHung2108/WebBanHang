@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Bán hàng</title>
+</head>
+<body>
+    <!-------------------------------Menu------------------------->
+    <header>
+        <div class="logo">
+            <h2>SMOKE STRORE</h2>
+        </div>
+        <div class="menu">
+            <li><a href=""> NỮ </a>
+                <ul class="submenu">
+                    <li><a href="">Hàng mới về</a></li>
+                    <li><a href="">Collection</a></li>
+                    <li><a href="">Áo</a>
+                        <ul>
+                            <li><a href="">Áo Sơ Mi</a></li>
+                            <li><a href="">Áo Thun</a></li>
+                            <li><a href="">Áo Vest</a></li>
+                            <li><a href="">Áo Khoác</a></li>
+                            <li><a href="">Áo Len</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Quần</a>
+                        <ul>
+                            <li><a href="">Quần Jean</a></li>
+                            <li><a href="">Quần Lửng</a></li>
+                            <li><a href="">Quần Dài</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Hàng mới về</a></li>
+                </ul>
+            
+            </li>
+            <li><a> NAM </a></li>
+            <li><a> TRẺ EM </a></li>
+            <li><a> SALE </a></li>
+            <li><a> KHẨU TRANG </a></li>
+            <li><a> BST </a></li>
+            <li><a> THÔNG TIN </a></li>
+        </div>
+        <div class="other">
+            <li><input type="text" placeholder="Tìm kiếm"><i class="fas fa-search"></i></li></li>
+            <li><a class="fa fa-paw" href=""></a></li>
+            <li><a class="fa fa-user" href=""></a></li>
+            <li><a class="fa fa-shopping-bag" href=""></a></li>
+        </div>
+    </header>
+<!------------------------ Cart ------------------------>
+<section class="cart">
+    <div class="container">
+        <div class="cart-top-wrap">
+            <div class="cart-top">
+                <div class="cart-top-cart cart-top-item">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="cart-top-adress cart-top-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="cart-top-payment cart-top-item">
+                    <i class="fas fa-money-check-alt"></i>
+                </div>
+            </div>
+        </div>
+        <div class="cart-content row">
+            <div class="cart-content-left">
+                <table>
+                    <tr>
+                        <th>Sản phẩm</th>
+                        <th>Tên sản phẩm</th>
+                        <th>Màu</th>
+                        <th>Size</th>
+                        <th>SL</th>
+                        <th>Thành Tiền</th>
+                        <th>Xóa</th>
+                    </tr>
+                    <tr>
+                        <td><img src="image/Images/Adidas/Adidas_1-Black.svg" alt=""></td>
+                        <td><p>Giày adidas MS 12345</p></td>
+                        <td><p style="height: 25px; width: 25px; background-color: red;"></p></td>
+                        <td><p>L</p></td>
+                        <td><input type="number" value="1" min="1"></td>
+                        <td><p>1.299.000<sup>đ</sup></p></td>
+                        <td><span>X</span></td>
+                    </tr>
+                    <tr>
+                        <td><img src="image/Images/Adidas/Adidas_1-White.svg" alt=""></td>
+                        <td><p>Giày adidas MS 12345</p></td>
+                        <td><p style="height: 25px; width: 25px; background-color: rgba(233, 229, 229, 0.867);"></p></td>
+                        <td><p>L</p></td>
+                        <td><input type="number" value="1" min="1"></td>
+                        <td><p>1.399.000<sup>đ</sup></p></td>
+                        <td><span>X</span></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="cart-content-right">
+                <table>
+                    <tr>
+                        <th colspan="2">TỔNG TIỀN GIỎ HÀNG</th>
+                    </tr>
+                    <tr>
+                        <td>TỔNG SẢN PHẨM</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>TỔNG TIỀN HÀNG</td>
+                        <td><p>1.299.000<sup>đ</sup></p></td>
+                    </tr>
+                    <tr>
+                        <td>TẠM TÍNH</td>
+                        <td><p style="color: black; font-weight: bold;">1.299.000<sup>đ</sup></p></td>
+                    </tr>
+                </table>
+                <div class="cart-content-right-text">
+                    <p>Bạn sẽ nhận miễn phí ship khi đơn hàng của bạn có tổng giá trị trên 2.000.000<sup>đ</sup></p>
+                    <p style="color: red; font-weight:bold;">Mua thêm <span style="font-size: 18px;">131.000</span><sup>đ</sup> để được miễn phí SHIP</p>
+                </div>
+                <div class="cart-content-right-button">
+                    <button>Tiếp tục mua sắm</button>
+                    <button>Thanh toán</button>
+                </div>
+                <div class="cart-content-right-login">
+                    <p>TÀI KHOẢN SOMKE STORE</p>
+                    <br>
+                    <p style="padding-left: 10px;">Hãy <a href="" style="color: rgb(235, 196, 25);">Đăng nhập</a> tài khoản của bạn để tích điểm thành viên</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+<!--------------------------App------------------------->
+ <section class="app-container">
+    <p>Tải ứng dụng</p>
+    <div class="app-google">
+        <a href=""><img src="image/appstore.png" alt=""></a>
+        <a href=""><img src="image/googleplay.png" alt=""></a>
+    </div>
+    <p>Nhận tin nhắn từ shop</p>
+    <input type="text" placeholder="Nhập email của bạn...">
+</section>
+<!--------------------------Footer--------------------------->
+<section class="footer">
+    <div class="footer-top">
+        <li><a href=""><img src="image/dathongbao.jpg" alt=""></a></li>
+        <li><a href="">Liên hệ</a></li>
+        <li><a href=""></a>Tuyển dụng</li>
+        <li><a href="">Giới thiệu</a></li>
+        <li>
+            <a class="fab fa-facebook-f"></a>
+            <a class="fab fa-twitter"></a>
+            <a class="fab fa-youtube"></a>
+        </li>
+    </div>
+    <div class="footer-center">
+        <p>
+            Công ty Cổ phần Mạnh Hùng với số đăng ký kinh doanh: 0862210801 <br>
+            Địa chỉ đăng ký: Thành Công, Khoái Châu, Hưng Yên <br>
+            Đạt hàng online: <span>0234 567 891</span>
+        </p>
+    </div>
+    <div class="footer-bottom">
+        @SMOKE STORE ALL right reserved
+    </div>
+</section>
+</body>
+<script src="js/index.js"></script>
+</html>
