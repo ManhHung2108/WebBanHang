@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Bán hàng</title>
+</head>
+<body>
+    <!-------------------------------Menu------------------------->
+    <header>
+        <div class="logo">
+            <h2>SMOKE STRORE</h2>
+        </div>
+        <div class="menu">
+            <li><a href=""> NỮ </a>
+                <ul class="submenu">
+                    <li><a href="">Hàng mới về</a></li>
+                    <li><a href="">Collection</a></li>
+                    <li><a href="">Áo</a>
+                        <ul>
+                            <li><a href="">Áo Sơ Mi</a></li>
+                            <li><a href="">Áo Thun</a></li>
+                            <li><a href="">Áo Vest</a></li>
+                            <li><a href="">Áo Khoác</a></li>
+                            <li><a href="">Áo Len</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Quần</a>
+                        <ul>
+                            <li><a href="">Quần Jean</a></li>
+                            <li><a href="">Quần Lửng</a></li>
+                            <li><a href="">Quần Dài</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Hàng mới về</a></li>
+                </ul>
+            
+            </li>
+            <li><a> NAM </a></li>
+            <li><a> TRẺ EM </a></li>
+            <li><a> SALE </a></li>
+            <li><a> KHẨU TRANG </a></li>
+            <li><a> BST </a></li>
+            <li><a> THÔNG TIN </a></li>
+        </div>
+        <div class="other">
+            <li><input type="text" placeholder="Tìm kiếm"><i class="fas fa-search"></i></li></li>
+            <li><a class="fa fa-paw" href=""></a></li>
+            <li><a class="fa fa-user" href=""></a></li>
+            <li><a class="fa fa-shopping-bag" href=""></a></li>
+        </div>
+    </header>
+<!------------------------ Payment ------------------------>
+<section class="payment">
+    <div class="container">
+        <div class="payment-top-wrap">
+            <div class="payment-top">
+                <div class="payment-top-cart payment-top-item">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="payment-top-adress payment-top-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="payment-top-payment payment-top-item">
+                    <i class="fas fa-money-check-alt"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="payment-content row">
+            <div class="payment-content-left">
+                <div class="payment-content-left-method-delivery">
+                    <p style="font-weight: bold;">Phương thức giao hàng</p>
+                    <div class="payment-content-left-method-delivery-item row">
+                        <input type="radio">
+                        <label for="">Giao hàng chuyển phát nhanh</label>
+                    </div>
+                </div>
+                <div class="payment-content-left-method-payment">
+                    <p style="font-weight: bold;">Phương thức thanh toán</p>
+                    <p>Mọi giao dịch đều được bảo mật và mã hóa. Thông tin thẻ tín dụng sẽ không bao giờ lưu lại</p>
+                    <div class="payment-content-left-method-payment-item row">
+                        <input type="radio" name="method-paymet">
+                        <label for="">Thanh toán bằng thẻ tín dụng (OnePay)</label>
+                    </div>
+                    <div class="payment-content-left-method-payment-item-img-visa">
+                        <img src="image/visa.png" alt="">
+                    </div>
+                    <div class="payment-content-left-method-payment-item row">
+                        <input checked type="radio" name="method-paymet">
+                        <label for="">Thanh toán bằng thẻ ATM (OnePay)</label>
+                    </div>
+                    <div class="payment-content-left-method-payment-item-img-atm">
+                        <img src="image/ATM2.jpg" alt="">
+                    </div>
+                    <div class="payment-content-left-method-payment-item row">
+                        <input type="radio" name="method-paymet">
+                        <label for="">Thanh toán Momo</label>
+                    </div>
+                    <div class="payment-content-left-method-payment-item-img-momo">
+                        <img src="image/momo.png" alt="">
+                    </div>
+                    <div class="payment-content-left-method-payment-item row">
+                        <input type="radio" name="method-paymet">
+                        <label for="">Thu tiền tận nơi</label>
+                    </div>
+                </div>
+            </div>
+            <div class="payment-content-right">
+                <div class="payment-content-right-button">
+                    <input type="text" placeholder="Mã giảm giá/Quà tặng">
+                    <button><i class="fas fa-check"></i></button>
+                </div>
+                <div class="payment-content-right-button">
+                    <input type="text" placeholder="Mã cộng tác viên">
+                    <button><i class="fas fa-check"></i></button>
+                </div>
+                <div class="payment-content-right-mnv">
+                    <select name="" id="">
+                        <option value="">Chọn mã nhân viên cần thiết</option>
+                        <option value="">D345</option>
+                        <option value="">A345</option>
+                        <option value="">E345</option>
+                        <option value="">I345</option>
+                    </select>
+                </div>
+
+                <table>
+                    <tr>
+                        <th>Tên sản phẩm</th>
+                        <th>Giảm giá</th>
+                        <th>Số lượng</th>
+                        <th>Thành tiền</th>
+                    </tr>
+                    <tr>
+                        <td>Giày adidas MS 12345</td>
+                        <td>-30%</td>
+                        <td>1</td>
+                        <td>590.000 <sup>đ</sup></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style="text-align: left;">Tổng tiền (790.0000 <sup>đ</sup>)</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Tạm tính</td>
+                        <td>650.000 <sup>đ</sup></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Giao hàng chuyển phát nhanh</td>
+                        <td>50.000 <sup>đ</sup></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Tiền thanh toán</td>
+                        <td>700.000 <sup>đ</sup></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="payment-content-bottom">
+            <a href=""><span style="color: rgb(224, 160, 20);">&#171;</span> <p style="color: rgb(224, 160, 20);">Quay lại trang giỏ hàng</p></a>
+        </div>
+        <div class="payment-content-payment">
+            <button>TIẾP TỤC THANH TOÁN</button>
+        </div>
+    </div>
+
+</section>
+
+
+
+<!--------------------------App------------------------->
+ <section class="app-container">
+    <p>Tải ứng dụng</p>
+    <div class="app-google">
+        <a href=""><img src="image/appstore.png" alt=""></a>
+        <a href=""><img src="image/googleplay.png" alt=""></a>
+    </div>
+    <p>Nhận tin nhắn từ shop</p>
+    <input type="text" placeholder="Nhập email của bạn...">
+</section>
+<!--------------------------Footer--------------------------->
+<section class="footer">
+    <div class="footer-top">
+        <li><a href=""><img src="image/dathongbao.jpg" alt=""></a></li>
+        <li><a href="">Liên hệ</a></li>
+        <li><a href=""></a>Tuyển dụng</li>
+        <li><a href="">Giới thiệu</a></li>
+        <li>
+            <a class="fab fa-facebook-f"></a>
+            <a class="fab fa-twitter"></a>
+            <a class="fab fa-youtube"></a>
+        </li>
+    </div>
+    <div class="footer-center">
+        <p>
+            Công ty Cổ phần Mạnh Hùng với số đăng ký kinh doanh: 0862210801 <br>
+            Địa chỉ đăng ký: Thành Công, Khoái Châu, Hưng Yên <br>
+            Đạt hàng online: <span>0234 567 891</span>
+        </p>
+    </div>
+    <div class="footer-bottom">
+        @SMOKE STORE ALL right reserved
+    </div>
+</section>
+</body>
+<script src="js/index.js"></script>
+</html>
