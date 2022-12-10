@@ -1,4 +1,8 @@
 <?php
+include "config.php";
+?>
+
+<?php
 class Database
 {
     public $host = DB_HOST;
@@ -23,9 +27,9 @@ class Database
     }
 
     //select or read Data
-    public function select($querry)
+    public function select($query)
     {
-        $result = $this->link->querry($querry) or
+        $result = $this->link->query($query) or
             die($this->link->error . __LINE__);
         if ($result->num_rows > 0) {
             return $result;
@@ -35,9 +39,9 @@ class Database
     }
 
     //Insert data
-    public function insert($querry)
+    public function insert($query)
     {
-        $insert_row = $this->link->querry($querry) or
+        $insert_row = $this->link->query($query) or
             die($this->link->error . __LINE__);
         if ($insert_row) {
             return $insert_row;
@@ -47,9 +51,9 @@ class Database
     }
 
     //Update data
-    public function update($querry)
+    public function update($query)
     {
-        $update_row = $this->link->querry($querry) or
+        $update_row = $this->link->query($query) or
             die($this->link->error . __LINE__);
         if ($update_row) {
             return $update_row;
@@ -59,9 +63,9 @@ class Database
     }
 
     //Delete data
-    public function delete($querry)
+    public function delete($query)
     {
-        $delete_row = $this->link->querry($querry) or
+        $delete_row = $this->link->query($query) or
             die($this->link->error . __LINE__);
         if ($delete_row) {
             return $delete_row;
