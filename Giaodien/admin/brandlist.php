@@ -31,8 +31,8 @@ $show_brand = $brand->show_brand(); //gọi bên class lấy được data
                 <td><?php echo $result['brand_id'] ?></td>
                 <td><?php echo $result['category_name'] ?></td>
                 <td><?php echo $result['brand_name'] ?></td>
-                <td><a href="brandedit.php?cartegory_id=<?php echo $result['brand_id'] ?>">Sửa </a>|
-                    <a href="branddelete.php?cartegory_id=<?php echo $result['brand_id'] ?>">Xóa</a>
+                <td><a href="brandedit.php?brand_id=<?php echo $result['brand_id'] ?>">Sửa </a>|
+                    <a href="branddelete.php?brand_id=<?php echo $result['brand_id'] ?>">Xóa</a>
                 </td>
             </tr>
             <?php
