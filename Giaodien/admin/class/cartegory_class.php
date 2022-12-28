@@ -1,5 +1,6 @@
 <?php
-include "database.php"; //gọi đến file này
+include "lib/database.php"; //gọi đến file này
+// require_once('../../database.php');
 ?>
 <?php
 

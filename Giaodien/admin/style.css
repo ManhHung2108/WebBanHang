@@ -73,3 +73,41 @@ header{
     border: 1px solid #dddddd;
     height: 30px;
 }
+/*------------------productadd.html----------------*/
+.admin-content-right-product_add h1{
+    margin-bottom: 20px;
+}
+.admin-content-right-product_add input, select{
+    height: 30px;
+    width: 200px;
+    display: block;
+    margin: 6px 0 12px;
+    padding-left: 12px;
+}
+.admin-content-right-product_add textarea{
+    display: block;
+    height: 200px;
+    width: 500px;
+    margin-bottom: 20px;
+    padding: 12px;
+}
+.admin-content-right-product_add button{
+    display: block;
+    margin-top: 10px;
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+    background-color: brown;
+    border: none;
+    color: white;
+}
+
+.admin-content-right-product_add button:hover{
+    background-color: transparent;
+    border: 1px solid brown;
+    color: brown;
+    transition: 0.3s;
+}
+#cke_editor1{
+    margin-bottom: 12px;
+}
